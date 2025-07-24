@@ -1,0 +1,74 @@
+Business Nexus is a networking platform designed to connect entrepreneurs and investors.
+Interns will build the frontend for two user roles: Investors and Entrepreneurs, including
+dashboards, profiles, a chatbot system, and collaboration request features.
+Tools & Technologies:
+● Framework: React.js (with Vite or CRA)
+● Styling: Tailwind CSS / Styled Components / CSS Modules
+● Routing: React Router
+● State Management: Context API / Redux (basic)
+● Others: Axios for mock API integration, Git for version control, Figma (or given UI
+references)
+You can also use tech stack of your own choice.
+1. Project Setup
+0 Set up a React project using Vite/CRA
+○ Create folder structure: components, pages, layouts, assets, etc.
+○ Install required dependencies
+2. Routing
+0 Set up routes for:
+■ /login
+■ /register
+■ /dashboard/investor
+■ /dashboard/entrepreneur
+■ /profile/investor/:id
+■ /profile/entrepreneur/:id
+
+3. Authentication UI
+0 Create Login and Registration forms (with role selection)
+○ Form validations
+4. Layout Component
+0 Build a shared DashboardLayout for consistent navbar/sidebar
+5. Design System
+0 Create a component library for buttons, cards, input fields
+Investor Dashboard
+● View list of entrepreneurs
+● Each entrepreneur displayed in a profile card with:
+0 Name, startup name, pitch summary
+○ View Full Profile button
+
+Entrepreneur Dashboard
+● View list of collaboration requests from investors
+● Display investor name, profile snippet, request status
+Profiles
+● Entrepreneur Profile should include:
+0 Bio, startup description, funding need, pitch deck placeholder
+● Investor Profile should include:
+0 Bio, investment interests, portfolio companies
+
+Mock API Integration
+● Use mock JSON data or mock API tools (like MockAPI or JSON Server)
+1. Communication Chat Feature
+● Chat UI should allow real-time-style (mock or live if backend available) communication
+between:
+0 Investor & Entrepreneur (1-on-1 chat) ● Access:
+○ Available through dashboards (e.g., "Message" button on profile cards) ○
+Clicking “Message” opens a chat window or redirects to /chat/:userId ● Chat
+UI Requirements:
+
+0 Message input field
+○ Sent and received messages with timestamps
+○ Different user message alignment (left/right)
+○ Show user name and avatar ●
+Bonus:
+○ Store chat history locally (optional)
+○ Show online/offline status mock
+
+2. UI Polish
+● Improve visual consistency across components
+● Add hover effects, subtle transitions
+● Improve mobile responsiveness
+● Optional: Dark mode toggle
+3. Testing & Debugging
+● Verify all user flows (auth, dashboards, profile view, chat)
+● Mobile testing
+● Fix layout bugs and ensure clean, reusable components
+create a project according to this prompt please
